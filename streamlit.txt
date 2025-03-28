@@ -1,29 +1,11 @@
-# 📦 Requirements para Homologador Inteligente RAMEDICAS
-
-# Core
-streamlit
-pandas
-numpy
-
-# Procesamiento de lenguaje y embeddings
-torch
-sentence-transformers
-transformers
-
-# Manejo de datos y archivos
-openpyxl
-xlrd  # Para compatibilidad con Excel antiguo
-xlsxwriter
-
-# Utilidades
-tqdm  # Para barras de progreso
-python-dotenv # Para manejo de variables de entorno
-unicodedata2 # Mejor manejo de Unicode
-
-# Optimización
-scipy  # Requerido por sentence-transformers
-scikit-learn  # Para algunas operaciones de similitud
-
-# Web requests
-requests
-urllib3
+streamlit>=1.28.0
+pandas>=2.0.0
+numpy>=1.24.0
+torch>=2.0.0
+sentence-transformers>=2.2.0
+transformers>=4.30.0
+openpyxl>=3.0.0
+scikit-learn>=1.0.0
+scipy>=1.7.0
+tqdm>=4.0.0
+python-dotenv>=1.0.0
