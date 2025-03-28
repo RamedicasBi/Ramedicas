@@ -1,33 +1,29 @@
+# 📦 Requirements para Homologador Inteligente RAMEDICAS
+
+# Core
 streamlit
-#Necesario para crear y ejecutar la aplicación web interactiva.
-
-
 pandas
-#Para manejar y procesar datos tabulares (Excel, DataFrames, etc.).
-
-openpyxl
-#Para leer y escribir archivos Excel en formatos .xlsx.
-
-rapidfuzz
-#Para realizar coincidencias de texto rápidas y eficientes mediante ratios de similitud.
-
-scikit-learn
-#Es útil si se llega a poner en el codigo funciones de preprocesamiento, métricas adicionales, o embeddings personalizados.
-
-pillow
-#Para manejar imágenes, si se usa gráficos o logos en la app.
-
-sentence-transformers
-#Para realizar embeddings de texto utilizando modelos preentrenados como all-MiniLM-L6-v2.
-
-torch
-#Es una dependencia principal de sentence-transformers y se usa para realizar cálculos de embeddings y métricas de similitud.
-
-transformers
-#Para usar modelos de Hugging Face (en algunos modelos de sentence-transformers pueden depender de él).
-
 numpy
-#Base para operaciones matemáticas y matrices, usado por casi todas las librerías científicas.
 
-unidecode
-#Para normalizar y limpiar texto (eliminación de caracteres acentuados o especiales).
+# Procesamiento de lenguaje y embeddings
+torch
+sentence-transformers
+transformers
+
+# Manejo de datos y archivos
+openpyxl
+xlrd  # Para compatibilidad con Excel antiguo
+xlsxwriter
+
+# Utilidades
+tqdm  # Para barras de progreso
+python-dotenv # Para manejo de variables de entorno
+unicodedata2 # Mejor manejo de Unicode
+
+# Optimización
+scipy  # Requerido por sentence-transformers
+scikit-learn  # Para algunas operaciones de similitud
+
+# Web requests
+requests
+urllib3
